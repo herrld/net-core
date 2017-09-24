@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <meta charset="utf-8" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap-grid.css" rel="stylesheet" />
+    <link href="~/lib/bootswatch/yeti/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    @*<div class="navbar navbar-fixed-top">
+        <div class="container">
+            <span>
+                <img class="profileImage" src="~/img/default.jpg" />
+                <span id="username">lee</span>
+            </span>
+            <div class="navbar-collapse collapse">
+                <ul class="nav">
+                    <li>
+                        <a asp-controller="App" asp-action="Index">Home</a>
+                    </li>
+                    <li>
+                        <a asp-controller="App" asp-action="Contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>*@
+    
+    <div class="wrapper">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <a class="nav navbar-nav navbar-right btn btn-primary" asp-controller="Account" asp-action="Logout">Logout</a>
+                <ul class="nav navbar-nav navbar-left">
+                    <li>
+                        <a asp-controller="App" asp-action="Index">Home</a>
+                    </li>
+                    <li>
+                        <a asp-controller="App" asp-action="Contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="main" class="container-fluid">
+            <div>
+                @RenderBody()
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="navbar navbar-inverse navbar-fixed-bottom">
+                <h4 class="text-center text-info">&copy; me</h4>
+            </div>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="~/lib/jQuery/dist/jquery.js"></script>
+
+    <script src="~/lib/popper.js/dist/umd/popper.js"></script>
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+    
+    
+    <script type="text/javascript" src="~/js/site.js"></script>
+    @RenderSection("scripts", false)
+</body>
+</html>

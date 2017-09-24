@@ -1,0 +1,11 @@
+<h3>Reddit</h3>
+<div class="feed-item" ng-repeat="item in data">
+    <div class="row">
+        <div class="col-md-2">
+            <img class="home-thumb" ng-src="{{item.thumbnail}}" />
+        </div>
+        <div class="col-md-10">
+            <a ng-href="http://reddit.com/{{item.link}}">{{item.title}}</a>
+        </div>
+    </div>
+</div>

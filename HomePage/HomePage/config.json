@@ -1,0 +1,11 @@
+{
+  "MailSettings": {
+    "ToAddress": "test@test.com"
+  },
+  "SourceUrls": {
+    "reddit": "https://www.reddit.com/.json?feed=e818538ce0d5cf4988038a13f4a3ede94d3ac575&user=bainon"
+  },
+  "ConnectionStrings": {
+    "HomepageConnection": "server=localhost;user id=lee;database=homepage;password=wecaduq"
+  }
+}
