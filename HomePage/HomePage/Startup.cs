@@ -110,7 +110,7 @@ namespace HomePage
                     template: "{controller=App}/{action=Index}/{id?}");
 
             });
-            seedService.SeedData().Wait();
+            //seedService.SeedData().Wait();
         }
     }
 }
